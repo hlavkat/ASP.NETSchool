@@ -1,0 +1,13 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Home Page";
+    //string userAgent = Context.Request.Headers["User-Agent"].ToString();
+    //bool isSmallScreen = 
+}
+<div class="d-flex justify-content-end">
+    <a class="btn btn-danger" asp-controller="Account" asp-action="Logout">Log out</a>
+</div>
+<h1 class="text-center">Welcome!</h1>
+<div class="text-center">
+    @Model 
+</div>

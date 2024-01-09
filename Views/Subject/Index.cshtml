@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Subject>
+
+<h3 class="text-center mb-3">List of subjects</h3>
+<div class="d-flex justify-content-end">
+	@if (User.IsInRole("Admin") || User.IsInRole("Teacher")) {
+		<a class="btn btn-success my-2 buttonL" asp-action="Create">Add subject</a>	
+	}
+</div>
+<div class="row">
+	@foreach (var subject in Model) {
+		<div class="col-md-4 col-12 mb-2">
+			<div class="border border-1 border-dark p-2 rounded-3 bg-warning bg-opacity-25">
+				<h5 class="text-center">@subject.Name </h5>
+				<p>ID: @subject.Id</p>
+				@if (User.IsInRole("Teacher") || User.IsInRole("Admin")) {
+					<div class="d-flex justify-content-center">
+						<a class="btn btn-warning mx-2 button" asp-action="Edit" asp-route-id="@subject.Id">Edit</a>
+						<a class="btn btn-danger mx-2 button" asp-action="Delete" asp-route-id="@subject.Id">Delete</a>
+					</div>				
+				}
+			</div>
+		</div>
+	}
+</div>
+

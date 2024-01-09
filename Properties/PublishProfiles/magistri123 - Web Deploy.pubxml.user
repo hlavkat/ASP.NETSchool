@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABpJvqlu1dUOcvEQHGlipLQAAAAACAAAAAAAQZgAAAAEAACAAAABtiBMO9bq3TNPvNDHOSS4BaYv/veaNZMXQjK4Cl/QeTQAAAAAOgAAAAAIAACAAAAAYisnZtFVqJxr/FEkyJsaQuN5d9FCslPWqC0KOewkb/IAAAACnJu+5X2FcblR2Thq5aEF6JK42jqHgFBa+bOXn85HUM29ytYwmBXpQKuRv+HxWtG4kq2uuekn5yHa8F3XtRdNbNuuMAxl92l5hAbudyBlivN0NOOVXS0n+O6CtoqC1CUfWtvw0WrqOs4RNTPIJ2W6srmbkeW8hbhw5NM91hn4JsEAAAADeysxzR3pQhGT9IrS9dj/ukn7kNbM2OOfETJZz8qYKOTiIjt5M53fvmvHyv1uNrha2T0DtkK41RoPzGvq1mv1L</EncryptedPassword>
+    <History>True|2023-12-20T09:38:52.8810066Z;True|2023-12-20T10:36:19.1483223+01:00;True|2023-12-20T10:16:58.8263964+01:00;True|2023-12-20T10:14:59.6204117+01:00;True|2023-12-20T10:14:02.7535202+01:00;True|2023-12-20T10:12:59.6659055+01:00;True|2023-12-20T09:46:41.7018938+01:00;True|2023-12-20T09:22:01.0982270+01:00;True|2023-12-20T08:49:34.1216148+01:00;True|2023-12-20T08:28:39.3010372+01:00;True|2023-12-20T08:27:31.2540562+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureDbConnection">
+      <Value>Server=tcp:1school.database.windows.net,1433%3bInitial Catalog=1schoolDB%3bPersist Security Info=False%3bUser ID=GumovyMedvidek%3bPassword=Banan123%3bMultipleActiveResultSets=true%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

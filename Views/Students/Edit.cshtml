@@ -1,0 +1,17 @@
+﻿@model Student
+<form asp-action="Edit">
+	<div class="form-group">
+		<label asp-for="@Model.FirstName" class="fw-bold"></label>
+		<input asp-for="@Model.FirstName" type="text" class="form-control" required/>
+	</div>
+	<div class="form-group">
+		<label asp-for="@Model.LastName" class="fw-bold"></label>
+		<input asp-for="@Model.LastName" type="text" class="form-control" required/>
+	</div>
+	<div class="form-group">
+		<label asp-for="@Model.DateOfBirth" class="fw-bold"></label>
+		<input asp-for="@Model.DateOfBirth" type="date" class="form-control" required/>
+	</div>
+	<input class="btn btn-success mt-3" type="submit" value="Update"/>
+	<button class="button btn btn-warning mt-3 mx-3" asp-action="Index">Back</button>
+</form>

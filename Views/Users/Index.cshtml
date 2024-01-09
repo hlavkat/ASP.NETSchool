@@ -1,0 +1,27 @@
+﻿@model IEnumerable<AppUser>;
+<h3 class="text-center">All Users</h3>
+<div class="d-flex justify-content-end">
+	<a class="btn btn-success my-2 buttonL" asp-action="Create">New user</a>
+</div>
+<table class="table table-bordered">
+	<tr class="bg-danger bg-opacity-25">
+		<th>Id</th>
+		<th>User name</th>
+		<th>Email</th>
+		<th class="text-center">Update</th>
+		<th class="text-center">Delete</th>
+	</tr>
+	@foreach(AppUser user in Model) {
+		<tr class="bg-primary bg-opacity-50 w-100">
+			<td valign="middle">@user.Id</td>
+			<td valign="middle" class="fw-bold">@user.UserName</td>
+			<td valign="middle" class="fw-bold">@user.Email</td>
+			<td class="text-center">
+				<a class="btn btn-warning button" asp-action="Edit" asp-route-id="@user.Id">Update</a>
+			</td>
+			<td class="text-center">
+				<a class="btn btn-danger button" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+			</td>
+		</tr>
+	}
+</table>

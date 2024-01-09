@@ -1,0 +1,20 @@
+﻿@using ASP.NETSchool.ViewModels;
+@model UserViewModel
+<h3 class="text-center">Create a new user</h3>
+<form asp-action="Create">
+	<div asp-validation-summary="All" class="text-danger"></div>
+	<div class="form-group">
+		<label asp-for="Name" class="fw-bold"></label>
+		<input type="text" class="form-control bg-success bg-opacity-25" asp-for="Name" />
+	</div>
+	<div class="form-group">
+		<label asp-for="Email" class="fw-bold"></label>
+		<input type="email" class="form-control bg-success bg-opacity-25" asp-for="Email" />
+	</div>
+	<div class="form-group">
+		<label asp-for="Password" class="fw-bold"></label>
+		<input type="text" class="form-control bg-success bg-opacity-25" asp-for="Password" />
+	</div>
+	<input type="submit" class="button btn btn-success mt-3" value="Create"/>
+	<button class="button btn btn-warning mt-3 mx-3" asp-action="Index">Back</button>
+</form>
